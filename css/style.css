@@ -8,10 +8,8 @@ html {
 /*Universal Body selectors END*/
 
 /*Header selectors START*/
-
- a :hover{
-  color: green;
-  text-decoration: none;
+.banner-button a:hover {
+  color: gray;
 }
 
 .desktop {
@@ -96,6 +94,7 @@ nav li {
   padding-right: 8rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  line-height: 2.0rem;
 }
 
 
@@ -337,9 +336,10 @@ background-color: #F1F1F1;
   display: flex;
   padding: 1rem;
   height: 10rem;
+
 }
 
-.exhibit-content-right h3 {
+.exhibit-content-right p {
   font-size: 1.5rem;
   font-weight: 600;
   color: #767676;
@@ -384,7 +384,7 @@ footer {
 /*-Footer End-*/
 
 /*480px Media Query Start*/
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 720px) {
   /*Mobile header selectors START*/
   .desktop {
     display: none;
@@ -567,4 +567,53 @@ footer {
   padding: 2rem;
   font-size: 1rem;
 }
+}
+
+@media only screen and (max-width: 990px) {
+
+
+  .main-title {
+    /*border: 1px solid black;*/
+    height: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .main-title .colmar {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  nav li {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .banner-title p{
+    font-size: 2rem;
+    line-height: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .banner-title .heading-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner-button {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  .exhibit-content-right p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #767676;
+    padding-left: 1rem;
+  }
+  .exhibit-content-right div {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
 }
